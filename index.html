@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form 101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: linear-gradient(to bottom right, #c9d6ff, #e2e2e2);
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .image-box img {
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    .description {
+      max-width: 500px;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    hr {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      border: none;
+      height: 2px;
+      background-color: #aaa;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Fitness Activity Registration</h2>
+
+  <div class="container">
+    <div class="image-box">
+      <img src="https://i.ibb.co/3G9pf2p/images-22.jpg" alt="man work out">
+    </div>
+
+    <div class="description">
+      <p>
+        Engaging in regular fitness activities helps improve both physical and mental health.
+        This form is designed to collect basic information about students who are participating
+        in our wellness program. Please provide your details and select the hobbies you enjoy.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <form onsubmit="redirectToYouTube(); return false;">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Address:</label><br>
+    <input type="text" name="address" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Contact Number:</label><br>
+    <input type="text" name="contact" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox" name="hobby" value="Swimming"> Swimming<br>
+    <input type="checkbox" name="hobby" value="Biking"> Biking<br>
+    <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+    <input type="checkbox" name="hobby" value="Watching TV"> Watching TV<br>
+    <input type="checkbox" name="hobby" value="Playing"> Playing<br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function redirectToYouTube() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+  </script>
+
+</body>
+</html>
